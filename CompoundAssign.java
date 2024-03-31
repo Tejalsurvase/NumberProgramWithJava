@@ -1,0 +1,28 @@
+class CompoundAssign 
+{
+	public static void main(String[] args) 
+	{
+		double sal = 15000.00 ;
+		//sal = sal + 10000.00 ;
+		sal += 10000.00 ;
+		System.out.println(sal);
+
+
+		int income = 34000;
+		//income = income - 2000 ;
+		income -= 2000 ;
+		System.out.println(income) ;
+
+
+		float a = 34523.43f ;
+		//a = a * 2 ;
+		a *= 2 ;
+		System.out.println(a) ;
+
+
+		double b = 54566.86 ;
+		//b = b / 6 ;
+		b /= 6 ;
+		System.out.println(b) ;
+	}
+}

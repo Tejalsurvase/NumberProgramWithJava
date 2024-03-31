@@ -1,0 +1,19 @@
+class Pattern5 
+{
+	public static void main(String[] args) 
+	{
+		int num = 15 ;
+		for (int i = 0; i < num; i++)
+		{
+			for (int j = num; j <= num; j--)
+			{
+				System.out.print(" " + " ") ;
+			}
+			for (int k = 0; k < num; k++)
+			{
+				System.out.print("*" + " ") ;
+			}
+			System.out.println() ;
+		}
+	}
+}

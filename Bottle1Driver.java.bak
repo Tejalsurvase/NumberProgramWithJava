@@ -1,0 +1,13 @@
+class Bottle1Driver 
+{
+	public static void main(String[] args) 
+	{
+		Bottle1 b1 = new Bottle1() ;
+		System.out.println(b1) ;
+		System.out.println(b1.color) ;
+		System.out.println(b1.color) ;
+		System.out.println(b1.color) ;
+		System.out.println(b1.color) ;
+
+	}
+}

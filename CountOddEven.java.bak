@@ -1,0 +1,30 @@
+import java.util.Scanner ;
+class CountOddEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in) ;
+        System.out.println("Enter start year : ") ;
+        int start = sc.nextInt() ;
+        
+        System.out.println("Enter end year : ") ;
+        int end = sc.nextInt() ;
+        
+        int count = 0 ; 
+        
+        while(start <= end)
+        {
+            if((start % 4 == 0 && start % 100 != 0) || (start % 400 == 0))
+            {
+                count++ ;
+            }
+            start++ ;
+        }
+        if(count % 2 == 0)
+        {
+            System.out.println("Count is even number.") ;
+        }
+        else
+        {
+            System.out.println("Count is odd number.") ;
+        }
+    }
+}

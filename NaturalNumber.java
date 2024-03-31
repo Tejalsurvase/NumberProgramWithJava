@@ -1,0 +1,17 @@
+import java.util.Scanner ;
+class NaturalNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("Enter starting number :");
+		int num = sc.nextInt() ;
+
+        System.out.println("The series of natural numbers is as :") ;
+		for (int i = num; i <= num + 10 ; i++ )
+		{
+			System.out.println(i) ;
+		}
+		
+	}
+}

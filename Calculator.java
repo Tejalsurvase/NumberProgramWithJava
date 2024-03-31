@@ -1,0 +1,94 @@
+import java.util.Scanner ;
+class Calculator 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("---------------Welcome------------------");
+		System.out.println("Enter the 1, if you want perform Addition operation.") ;
+		System.out.println("Enter the 2, if you want perform Subtraction operation.") ;
+		System.out.println("Enter the 3, if you want perform Multiplication operation.") ;
+		System.out.println("Enter the 4, if you want perform Modulus operation.") ;
+		System.out.println("Enter the 5, if you want perform Division operation.") ;
+
+		int option = sc.nextInt() ;
+		
+		switch(option)
+		{
+			case 1 :
+			{
+				System.out.println("Enter the first number : ") ;
+				int num1 = sc.nextInt() ;
+
+				System.out.println("Enter the second number : ") ;
+				int num2 = sc.nextInt() ;
+				
+				int sum = num1 + num2 ;
+				System.out.println("The addition of " + num1 + " and " + num2 + " is : " + sum) ;
+
+				break ;
+				
+			}
+
+			case 2 :
+			{
+				System.out.println("Enter the first number : ") ;
+				int num1 = sc.nextInt() ;
+
+				System.out.println("Enter the second number : ") ;
+				int num2 = sc.nextInt() ;
+
+				int sub = num1 - num2 ;
+				System.out.println("The subtraction of " + num1 + " and " + num2 + " is : " + sub) ;
+
+				break;
+				
+			}
+
+			case 3 :
+			{
+				System.out.println("Enter the first number : ") ;
+				int num1 = sc.nextInt() ;
+
+				System.out.println("Enter the second number : ") ;
+				int num2 = sc.nextInt() ;
+
+				int mul = num1 * num2 ;
+				System.out.println("The multiplication of " + num1 + " and " + num2 + " is : " + mul) ;
+
+				break ;
+				
+			}
+
+			case 4 :
+			{
+				System.out.println("Enter the first number : ") ;
+				int num1 = sc.nextInt() ;
+
+				System.out.println("Enter the second number : ") ;
+				int num2 = sc.nextInt() ;
+		
+				int mod = num1 % num2 ;
+				System.out.println("The modulus of " + num1 + " and " + num2 + " is : " + mod) ;
+
+				break ;
+				
+			}
+
+			case 5 :
+			{
+				System.out.println("Sorry...Work in progress...Please try later..!") ;
+
+				break ;
+			}
+
+			default :
+			{
+				System.out.println("Please enter valid option...!...Thank You...!") ;
+
+				break ;
+			}
+
+		}
+	}
+}

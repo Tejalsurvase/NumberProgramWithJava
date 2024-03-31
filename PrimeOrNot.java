@@ -1,0 +1,41 @@
+import java.util.Scanner ;
+class PrimeOrNot 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("Enter the number :");
+		int num = sc.nextInt() ;
+
+		int sum = 0, product = 1, den = 2;
+
+		while (num > 0)
+		{
+			 if (num % den == 0)
+			 {
+				 break ;
+			 }
+			 den++ ;
+		}
+		if (den == num)
+		{
+			System.out.println(num + " is prime number.") ;
+			for (int i = num; i > 0; i /= 10)
+			{
+				int rem = i % 10 ;
+				sum += rem ;
+			}
+			System.out.println("And the sum of its digit is " + sum) ;
+		}
+		else
+		{
+			System.out.println(num + " is not a prime number.") ;
+            for (int j = num; j > 0; j /= 10)
+			{
+				int rem = j % 10 ;
+				product *= rem ;
+			}
+			System.out.println("And the product of its digit is " + product) ;
+		}
+	}
+}

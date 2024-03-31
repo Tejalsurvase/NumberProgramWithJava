@@ -1,0 +1,32 @@
+import java.util.Scanner ;
+class LeapYearEven
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("Enter Starting year :");
+		int start = sc.nextInt() ;
+
+		System.out.println("Enter ending year :") ;
+		int end = sc.nextInt() ;
+
+		int sum = 0 ;
+
+		while(start <= end)
+		{
+			if ((start % 4 == 0 && start % 100 != 0) || (start % 400 == 0))
+			{
+				while (start >= 0)
+				{
+					int rem = start % 10 ;
+					sum += 10 ;
+					start /= 10 ;
+				}
+			}
+		}
+		if (sum % 2 == 0)
+		{
+			System.out.println(start) ;
+		}
+	}
+}
